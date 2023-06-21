@@ -1,13 +1,146 @@
-body {
+/* body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  animation: roll 15s linear 0.5s infinite;
+} */
+
+/* React Logo Styles */
+.react{
+  padding: 0;
+  margin: 13%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cyan;
+  animation: roll 15s linear 0.5s infinite;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ball {
+  position: absolute;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  background-color:#5ed3f3;
 }
+
+
+.ellipse {
+  position: absolute;
+  width: 4vw;
+  height: 12vw;
+  border-radius: 50%;
+  border: 0.6vw solid #5ed3f3;
+}
+
+
+.ellipse1{
+  transform: rotate(30deg)
+}
+
+.ellipse2{
+  transform: rotate(-30deg)
+}
+
+.ellipse3{
+  transform: rotate(90deg)
+}
+
+@keyframes roll{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+
+
+/* YouTube Logo Styles */
+.youtube-logo { 
+  background-color: firebrick; 
+  width: 300px;
+  height: 200px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playBtn { 
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid white;
+}
+
+
+
+/* GitHub Logo Styles */
+.git-logo{
+  height: 150px;
+  width: 150px;
+  background-color: #f06033;
+  border-radius: 15px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.line1{
+  width: 110px;
+  background-color: white;
+  height: 10px;
+  top: 40px;
+  position: absolute;
+}
+
+
+.line1::before{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  top: -8px;
+  left: 30px;
+}
+
+.line1::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  top: -8px;
+  left: 90px;
+}
+
+.line2{
+  width: 90px;
+  background-color: white;
+  height: 12px;
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  transform: rotate(45deg);
+}
+
+.line2::before{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  top: -8px;
+  left: 70px;
+}
+
